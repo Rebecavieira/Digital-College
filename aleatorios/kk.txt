@@ -1,0 +1,17 @@
+PokerPlanning
+icebox/draft - a que nível está, se pode ser feita ou não.
+cancelled
+available - disponível pra qualquer desenvolvedor pegar
+question/ 
+
+peso: Weight 1, 2, 3, 5
+status: Available, Cancelled, Draft
+tipo: funcionalidade, bug ou melhoria
+
+product backlog: descrição da atividade
+sprint backlog: quando está disponível para ser feita
+Todo: quando designa a tarefa para uma pessoa
+doing: começou a fazer a tarefa
+review: tarefa revisada
+done: aprovada
+

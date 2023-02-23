@@ -1,0 +1,20 @@
+1. Abre o navegador
+2. Na barra de navegação, digita "facebook - entrar"
+3. Quando clicar em "enter", aparecerá alguns links de sites.
+4. Clicar no link "Facebook – entre ou cadastre-se"
+5. Se o usuário já tiver conta cadastrada no facebook, ao entrar na página de login, clicar no campo "email ou telefone", e preenche-lo.
+6. clicar no campo de "senha", e preenche-lo.
+7. Clicar no botão "entrar".
+8. Se a senha ficar com status de "incorreta", clicar no link de "esqueceu a senha?".
+9. Se o usuário não tiver conta cadastrada, clicar botão "criar nova conta".
+
+
+1. Abre o navegador
+2. Na barra de navegação, digita "facebook - entrar"
+3. Quando clicar em "enter", aparecerá alguns links de sites.
+4. Clicar no link "Facebook – entre ou cadastre-se"
+5. Se o usuário clicar no botão de "entrar", e não digitar o email e senha, os campos ficarão vermelhos.
+
+31 - 11:57
+42 12:07
+86 12:01

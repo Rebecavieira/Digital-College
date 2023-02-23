@@ -1,0 +1,31 @@
+.botao{
+    background-color: blue;
+    height: 46px;
+    padding: 0 26px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
+
+.accordion-button::after{
+    content: "+";
+    widht: 20px;
+    height: 20px;
+    font-size:20px;
+    background-image: none;
+    transform: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    content: "-";
+    background-image: none;
+}
+
+#depoimentos{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif; /* engloba todos*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DEDEDE;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* esse centraliza tudo ao meio*/
+}
+
+form{
+    width: 350px; /* largura */
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 16px; /* empurra o conteudo para o centro */
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-bottom: 6px; /*margem para baixo*/
+}
+
+/* label:hover{ quando passa  o mouse por cima, muda a cor para vermelho
+   color: red;
+}*/
+
+input, select{   /* quando  separa por virgula, os elementos recebem as mesmas propriedades*/
+    width: 100%;
+    height: 46px;  /* altura*/
+    margin-bottom: 16px;
+    padding: 0 10px;    
+}
+
+input:focus, select:focus, textarea:focus{ /*quando clicar nele, muda o estado*/
+    outline-color: #294cfa;
+}
+
+/*input:focus{ quando clicar nele, muda o estado
+    outline-color: #294cfa;
+}*/
+
+/* input:hover{   quando passa  o mouse por cima do input
+    border-color: red;
+} */
+
+textarea{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+/*textarea:hover{ quando passa  o mouse por cima 
+    border-color: red;
+} */
+
+textarea:focus{
+    outline-color: #294cfa;
+}
+select{
+    font-weight: bold;
+}
+
+button{
+    width: 50%;
+    height: 46px;
+    padding: 0 26px;
+    background-color: #294cfa;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 300ms;
+}
+
+button:hover{
+    background-color: #1735cc;
+}
+
+form button:hover{
+    background-color: #1735cc;
+}
+
+.botoes{
+    display: flex;
+    gap: 16px; /*é como se fosse uma margem, é um espaçamento que vai dar entre os filhos de um elemento*/
+    justify-content: space-between;
+}
+
+.botao-grande{
+    width: 100%;
+}
+
+form h5{
+    font-size:18px;
+    margin-top:16px;
+}
+
+table{
+    widht: 80%;
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+
+/* desenvolvimento para web*/
+/* freepik/pexels, pixabay encontrar imagens*/

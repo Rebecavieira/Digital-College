@@ -1,0 +1,38 @@
+body{
+    background-color: #DEDEDE;
+}
+
+.secao-detalhes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.secao-detalhes article{
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 30px;    
+    display: flex;
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal*/
+    transition: 1s;
+    box-shadow: 0px 0px 15px 1px #666666; /*sombreamento do circulo*/
+
+}
+
+.secao-detalhes article:hover {
+    color: red;
+    transition: 1s;
+    transform: scale(1.2) rotate(-60deg);
+
+}
+
+.secao-detalhes i{
+    font-size: 6rem;
+    
+}
+
+

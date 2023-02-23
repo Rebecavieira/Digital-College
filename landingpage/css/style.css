@@ -1,0 +1,111 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.secao01{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: #198754;
+  
+
+}
+
+.secao01 h1{
+    color: white;
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.secao01 h3, h5{
+    color: white;
+    text-align: center;
+
+}
+
+
+.secao02, .secao03{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.textos-bloco{
+    color: black;
+    text-align: left;
+
+}
+
+.secao04{
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+footer{
+    justify-content: space-around;
+    text-align: center;
+    background-color: #DEDEDE;
+    
+}
+
+.button-final {
+    padding: 1em 1.8125em;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    text-align: center;
+    cursor: pointer;
+    background-color: #198754;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button-final:hover{
+    background-color: #156941;
+}
+
+.button-inicial {
+    padding: 1em 1.8125em;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    text-align: center;
+    cursor: pointer;
+    background-color: #1e2a27;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button-inicial:hover {
+    background-color: #192320;
+}
+
+.input-inicial{
+    padding: 1em 1.8125em;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+

@@ -1,0 +1,44 @@
+cd .. - voltar
+ls - mostra as pastas
+cd nomedapasta - abre a pasta
+git config --global user.email "rebecavieira9876@gmail.com"
+git clone https://github.com/Rebecavieira/Rebecavieira.github.io.git
+git status - verificar se houve alteração
+
+ctrl L - limpar 
+
+git commit -m "Adiciona uma linha horizontal" - A mensagem do commit
+
+git push origin main - enviar para o projeto principal
+
+git add . - adiciona todos os arquivos de uma vez só
+git add --all - adiciona todos os arquivos de uma vez só
+
+
+git init 
+git remote add origin https.....
+git branch -M main
+git commit -m "mensagem"
+git push origin main
+
+
+trocar entre branch
+git checkout "nome"
+
+criar branch
+git checkout -b "nome"
+
+
+ciar um repositorio e subir um index.html
+adicionar as colegas
+aceitar o convite
+clonar o projeto (git clone)
+cada uma sobe para sua branch (git checkout -b "branch"
+unir as branchs na main
+
+git branch - cria a branch sem entrar nela
+git branch -d dev - apaga uma branch
+
+git pull origin main - puxar da versao principal
+
+

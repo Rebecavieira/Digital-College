@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabela{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEDEDE;
+    
+}
+
+.tabela table{
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.tabela table thead{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.tabela table thead th{
+    height: 46px;
+}
+
+.tabela table tbody td{
+    padding: 0 16px;
+    line-height: 40px;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+.tabela table tbody tr:nth-child(odd){
+    background-color: red;
+}
+
+even são pares e odd os impares

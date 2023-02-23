@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table border="1">
+
+            <thead> <!--cabeçalho da tabela-->
+                <tr> <!--linha da tabela-->
+                    <th>Nome</th> <!--coluna da primeira linha-->
+                    <th>Cidade</th>
+                    <th>Telefone</th>
+                    <th>Média</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rebeca Vieira</td>
+                    <td>Fortaleza</td>
+                    <td>(85) 98877-6655</td>
+                    <td>10</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Rebeca Vieira</td>
+                    <td>Fortaleza</td>
+                    <td>(85) 98877-6655</td>
+                    <td>10</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Rebeca Vieira</td>
+                    <td>Fortaleza</td>
+                    <td>(85) 98877-6655</td>
+                    <td>10</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Rebeca Vieira</td>
+                    <td>Fortaleza</td>
+                    <td>(85) 98877-6655</td>
+                    <td>10</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Rebeca Vieira</td>
+                    <td>Fortaleza</td>
+                    <td>(85) 98877-6655</td>
+                    <td>10</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+</body>
+</html>
