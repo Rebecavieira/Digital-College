@@ -7,8 +7,8 @@ function alterarCores(){
     if (dark.checked){                             
         document.body.classList.add('bg-dark');   // se o input estiver marcado, pega o body e aciona a classe bg-dark
         document.body.classList.add('text-white'); // se o input estiver marcado, pega o body e aciona a classe text-white
-       // tabela.classList.add('table-dark');        // se o input estiver marcado, pega o id= tabela e aciona a classe table-dark
-        document.getElementById('tabela').classList.add('table-dark'); // é a mesma coisa de adicionar a linha acima.
+        tabela.classList.add('table-dark');        // se o input estiver marcado, pega o id= tabela e aciona a classe table-dark
+        //document.getElementById('tabela').classList.add('table-dark'); // é a mesma coisa de adicionar a linha acima.
         document.querySelectorAll('[class="btn btn-warning"]').forEach(function(cadaBotao){ // se o input estiver marcado, altera cada botao, para deixá-lo outline
             cadaBotao.classList.remove('btn-warning');
             cadaBotao.classList.add('btn-outline-warning');
@@ -80,19 +80,33 @@ function ativarDarkmode(){
     
  ];
 
-let tabela = document.getElementById('tabela-body');
+ function listarAlunos(){
+    let tabela = document.getElementById('tabela-body');
 
-alunos.forEach((aluno) => {
-    tabela.innerHTML + = `<tr>
-                            <td>${aluno.id}</td>
-                            <td>${aluno.nome}</td>
-                            <td>${aluno.email}</td>
-                            <td>${aluno.telefone}</td>
-                            <td>${aluno.cidade}</td>
-                            <td>
-                                <button class="btn btn-warning">Editar</button>
-                                <button class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>`;
-})
+    alunos.forEach((aluno) => {
+        tabela.innerHTML += `<tr>
+                                <td>${aluno.id}</td>
+                                <td>${aluno.nome}</td>
+                                <td>${aluno.email}</td>
+                                <td>${aluno.telefone}</td>
+                                <td>${aluno.cidade}</td>
+                                <td>
+                                    <button class="btn btn-warning">Editar</button>
+                                    <button class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>`;
+    })
+ }
 
+
+function salvarAluno(){
+    event.preventDefault();
+
+    let aluno = {
+        nome: nome.value,
+        email: email.value,
+        telefone: telefone.value,
+        cidade: cidade.value
+    }
+    alunos.push(aluno)
+}
