@@ -14,7 +14,7 @@ let contatos = [
     {
         nome: "Brenda",
         telefone: "85 98877-5555"
-    },
+    }, 
     {
         nome: "João",
         telefone: "85 98877-5555"
