@@ -4,6 +4,7 @@ function listarAlunos(){
     let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
 
     let tabela = document.getElementById("tabela-body");
+    tabela.innerHTML = "";
     alunos.forEach((aluno, key) => {
         tabela.innerHTML += `<tr>
                                 <td>${key}</td>
@@ -13,7 +14,7 @@ function listarAlunos(){
                                 <td>${aluno.cidade}</td>
                                 <td>
                                     <button class="btn btn-warning">Editar</button>
-                                    <button class="btn btn-danger">Excluir</button>
+                                    <button class="btn btn-danger" onClick="deletarAluno(${key})">Excluir</button>
                                 </td>
                             </tr>`;
     })
@@ -41,8 +42,21 @@ function atualizarAluno(){}
 
 // DELETE
 
-function deletarAluno(){
+function deletarAluno(id){
     let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
+    let alunosAtualizado = [];
+
+    alunos.forEach((aluno, key) => {
+        if(id != key){
+            alunosAtualizado.push(aluno);
+        }
+    });
+
+    localStorage.setItem('alunos', JSON.stringify(alunosAtualizado));
+
+    alert("Aluno excluído");
+
+    listarAlunos()
 }
 
 
