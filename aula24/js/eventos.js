@@ -13,6 +13,9 @@ function buscarPokemon(){
         .then(res => res.json())
         .then(pokemon => {
             document.querySelector(".pokemon").innerHTML = `<img src="${pokemon.sprites.front_default}">`
+            document.querySelector(".tipo").innerHTML = "";
+            pokemon.types.forEach(cada => {
+                document.querySelector(".tipo").innerHTML += `<span>${cada.type.name} ,</span>`
+            })            
         })
-
-} 
+}  
