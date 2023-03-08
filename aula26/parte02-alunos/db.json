@@ -1,0 +1,40 @@
+{
+  "frutas": [
+    {
+      "id": 1,
+      "nome": "Banana",
+      "quantidade": 12
+    },
+    {
+      "id": 2,
+      "nome": "Uva",
+      "quantidade": 10
+    },
+    {
+      "id": 3,
+      "nome": "Pera",
+      "quantidade": 8
+    },
+    {
+      "id": 4,
+      "nome": "Caju",
+      "quantidade": 13
+    }
+  ],
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Rebeca",
+      "email": "rebeca@gmail.com",
+      "telefone": "9877654",
+      "cidade": "fortaleza"
+    },
+    {
+      "nome": "rebe",
+      "email": "lll",
+      "telefone": "999",
+      "cidade": "lll",
+      "id": 3
+    }
+  ]
+}

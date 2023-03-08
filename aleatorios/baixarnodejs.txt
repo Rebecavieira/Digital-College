@@ -1,0 +1,18 @@
+baixar node.js
+executa no terminal o código 
+node -v - verifica a versão
+npm -v - verifica a versão
+abre a pasta 
+npm init - clica enter
+description: descrever o projeto
+vai clicando enter
+
+npm install bootstrap - instala
+npm uninstall bootstrap - desinstala
+
+npm install - serve para instalar separadamente cada pacote
+
+npm install -g json-server - isso instala o json em todo o computador
+
+instalando o json 
+json-server --watch db.json --port 8000

@@ -1,0 +1,94 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "calças",
+      "descricao": "calças em geral"
+    },
+    {
+      "id": 2,
+      "titulo": "botas",
+      "descricao": "botas de calçar"
+    },
+    {
+      "titulo": "Bonés",
+      "descricao": "Bonés em geral",
+      "id": 3
+    },
+    {
+      "titulo": "Vestidos",
+      "descricao": "Vestidos em geral",
+      "id": 4
+    }
+  ], 
+  "produtos": [
+    {
+      "id": 1,
+      "categoria_id": 2,
+      "tamanho": "36",
+      "codigo": "10982-4",
+      "marca": "ArteSurf",
+      "descricao": "",
+      "valor": 59.9,
+      "titulo": "Bota cano alto",
+      "quantidade": 10,
+      "imagens": [
+        "imagem01.jpg",
+        "imagem02.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "categoria_id": 2,
+      "tamanho": "39",
+      "codigo": "11982-4",
+      "marca": "West",
+      "descricao": "",
+      "valor": 259.9,
+      "titulo": "Bota cano baixo",
+      "quantidade": 2,
+      "imagens": [
+        "imagem03.jpg",
+        "imagem04.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "categoria_id": 3,
+      "tamanho": "M",
+      "codigo": "13982-4",
+      "marca": "Nike",
+      "descricao": "",
+      "valor": 159.9,
+      "titulo": "Camiseta preta",
+      "quantidade": 5,
+      "imagens": [
+        "imagem05.jpg",
+        "imagem06.jpg"
+      ]
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Rebeca",
+      "cpf": "46787765543",
+      "email": "rebecavieira9876@gmail.com",
+      "telefone": "85988776655"
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "cpf": "26787765443",
+      "email": "joao9876@gmail.com",
+      "telefone": "85989774655"
+    },
+    {
+      "id": 3,
+      "nome": "Mariah",
+      "cpf": "35787765542",
+      "email": "mariah@gmail.com",
+      "telefone": "85985776635"
+    }
+  ]
+}
