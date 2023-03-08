@@ -1,16 +1,14 @@
-function Button() {
-  return (
-    <button>Clique aqui</button>
-  );
-}
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+
 
 export default function App(){
   return (
-    <h1>Olá Mundo
-      <Button/>
-      <Button/>
+    <>
+      <Header/>
+      <Banner/>
 
-    </h1>
+    </>
     
   )
 }
