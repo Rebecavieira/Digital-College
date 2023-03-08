@@ -1,1 +1,12 @@
 npx create-react-app meuapp
+todos os componentes iniciam com letra maiuscula
+
+não pode assim:
+<div>eu</div>
+<div>vc</div>
+
+pode assim:
+<>
+	<div>eu</div>
+	<div>vc</div>
+</>
