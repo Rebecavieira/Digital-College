@@ -10,3 +10,22 @@ pode assim:
 	<div>eu</div>
 	<div>vc</div>
 </>
+
+
+npx create-react-app nomedoprojeto
+vai na pasta src e apaga vários arquivos, deixando apenas app.js, index.js, reportWebVitals.js
+vai no arquivo index.js, e apaga o import do css
+apaga todo o conteudo do app.js
+cd nomedapasta que está o projeto
+npm start
+
+Regras JSX:
+1.Não pode ter tags órfãs, ou seja, não podem estar sozinhas.
+
+2. tags únicas precisam ser fechadas.
+por exemplo: input. <input/>
+
+3. Não existe class, mas sim className
+
+
+npm i react-router-dom -  instala o react router dom
