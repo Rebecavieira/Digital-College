@@ -1,7 +1,7 @@
 export default function Carousel(){
     return(
         <div>
-            Página de Carousel
+            Carousel
         </div>
     )
 }
