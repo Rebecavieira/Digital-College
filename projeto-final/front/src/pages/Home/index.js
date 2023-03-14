@@ -3,6 +3,7 @@ import Menu from "../../components/Menu";
 import Carousel from "../../components/Carousel";
 import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
+import Footer from "../../components/Footer";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
 
@@ -42,7 +43,7 @@ export default function Home(){
                     </Grid>
                 </Grid>
             </Container>
-            
+            <Footer />
         </div>
     )
 } 
