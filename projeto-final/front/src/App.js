@@ -7,6 +7,7 @@ import Produtos from './pages/Produtos';
 import Navbar from './components/Navbar';
 import Menu from './components/Menu';
 import "./index.css";
+import DetalhesProduto from './pages/DetalhesProduto';
 
 
 export default function App() {
@@ -19,6 +20,8 @@ export default function App() {
             <Route path="/Produtos" element={<Produtos />}/>
             <Route path="/Categorias" element={<Categorias />} />
             <Route path="/MeusPedidos" element={<MeusPedidos />} />
+            <Route path="/produtos/:id" element={<DetalhesProduto />} />
+
         </Routes>
       </BrowserRouter>
     </div>
