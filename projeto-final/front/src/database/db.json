@@ -1,0 +1,68 @@
+{
+    "bones": [
+        {
+            "azul": [
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/10/08/16651928665fdd2965cbd3e1213fd5821df1cd8a30_thumbnail_900x.webp"
+                },
+                {
+                    "nome": "Nike 2",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2021/06/16/16238275986a9564d123c5512d75afa12e27d4fff7_thumbnail_900x.webp"
+                }
+            ]
+        },
+        {
+            "roxo": [
+                {
+                    "nome": "Nike 3",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/12/19/16714174175806ffeda9e590b356db6a29ec9c2406_thumbnail_900x.webp"
+                },
+                {
+                    "nome": "Nike 4",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/01/11/16418714018a0917884f86830344bfbbed9fda9515_thumbnail_900x.webp"
+                }
+            ]
+        },
+        {
+            "verde": [
+                {
+                    "nome": "Nike 5",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/05/06/16518167687e42cfa470e9681e890512e168651d67_thumbnail_900x.webp"
+                },
+                {
+                    "nome": "Nike 6",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/05/06/1651816769efac68212b8d04edc93026bd2554441e_thumbnail_900x.webp"
+                }
+            ]
+        },
+        {
+            "vermelho":[
+                {
+                    "nome": "Nike 7",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/05/13/1652413597281cfd5c9a221436997476e60a674df5_thumbnail_900x.webp"
+                },
+                {
+                    "nome": "Nike 8",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img.ltwebstatic.com/images3_pi/2022/05/13/16524136022f325eba95a16bc118813a4d2048cb76_thumbnail_900x.webp"
+                }
+            ]
+        }
+    ]
+}
