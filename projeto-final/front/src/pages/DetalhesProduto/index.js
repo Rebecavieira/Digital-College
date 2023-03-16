@@ -27,7 +27,7 @@ export default function DetalhesProduto(){
                 return (
                     <Grid item xs={2.4}>
                         <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && {border: "2px solid red"}}>
-                            <img src={cada} width="100%" />
+                            <img src={cada} width="100%" alt="" />
                         </Card>
                     </Grid>
                 );
@@ -60,7 +60,7 @@ export default function DetalhesProduto(){
                             <Card align="center">
                                 <Stack direction="row" sx={{justifyContent: "space-between", alignItems: "center"}}>
                                     <ChevronLeft sx={{fontSize: "60px"}} onClick={anterior}/>
-                                        <img width="400px" src={imagens[atual]} />
+                                        <img width="400px" src={imagens[atual]} alt="" />
                                     <ChevronRight sx={{fontSize: "60px"}} onClick={proximo}/>
                                 </Stack>
                             </Card>

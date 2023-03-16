@@ -1,5 +1,4 @@
 import { Paper } from "@mui/material";
-import sapato from "./produto.png";
 import { Stack } from "@mui/system";
 
 export default function Produto(props){
@@ -7,7 +6,7 @@ export default function Produto(props){
         <>
             <Stack>
                 <Paper elevation={3}>
-                    <img src={props.imagem} style={{width: "100%"}}/>
+                    <img src={props.imagem} style={{width: "100%"}} alt=""/>
                 </Paper>
             
                 <span>{props.categoria}</span>
