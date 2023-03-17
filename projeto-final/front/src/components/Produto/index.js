@@ -14,6 +14,6 @@ export default function Produto(props){
                 <h4>{props.nome}</h4>
             </Stack>
            
-        </>
+        </> 
     );
 }

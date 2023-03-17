@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "../../components/Navbar";
 import Menu from "../../components/Menu";
 import Carousel from "../../components/Carousel";
+import ProdutosEmAlta from "../../components/Produtosemalta";
 import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
 import Footer from "../../components/Footer";
@@ -31,13 +32,14 @@ export default function Home(){
             <Carousel />
             <ColecoesDestaque />
             {listaProdutos.length}
+         
             <Container>
                 <Grid container spacing={3}>
                         {
                             listaProdutos.map((cadaProduto) => {
                                 return(
                                     <Grid item md={3.5}>
-                                        <Produto nome={cadaProduto.nome} categoria={cadaProduto.categoria} imagem={cadaProduto.imgUrl} />
+                                        <Produto nome={cadaProduto.nome} categoria={cadaProduto.categoria} imagem={cadaProduto.imgUrl} desconto={true} />
                                     </Grid>
                                 );
                             })
