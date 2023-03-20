@@ -2,19 +2,59 @@ $color-yellow: #FCAA1C;
 $color-gray: #666666;
 $color-texto: #474747;
 $color-light-gray: #8F8F8F;
+$color-bg-detalhesproduto: #E5E5E5;
 
 
 
 .product-details {
+    background-color: $color-bg-detalhesproduto;
+
     .title{
-        font-weight: bold;
-        font-size: 2rem; /* 32 px*/
+        width: 440px;
+        height: 72px;
+        left: 841px;
+        top: 274px;
+
+        /* H3 Title - Desktop Bold */
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        /* or 112% */
+
+        letter-spacing: 1px;
+
+        /* dark-gray */
+
         color: #1F1F1F;
+
     }
 
     .ref{
-        color: $color-gray;
-        font-size: 0.75rem;
+        width: 425px;
+    height: 21px;
+    left: 841px;
+    top: 356px;
+
+    /* Text Tinny - Desktop */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* dark-gray-3 */
+
+    color: #666666;
+
     }
 
     .reviews svg{
@@ -27,6 +67,38 @@ $color-light-gray: #8F8F8F;
 
     .titulo-descricao-produto{
         color: $color-light-gray;
+        width: 162px;
+        height: 22px;
+        left: 841px;
+        top: 488px;
+
+        /* Text X-Small Bold */
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+
+    }
+    .riscado {
+        width: 55px;
+        height: 28px;
+        left: 969px;
+        top: 440px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        /* identical to box height, or 175% */
+
+        letter-spacing: 0.75px;
+        text-decoration-line: line-through;
+
+        /* light-gray-2 */
+
+        color: #CCCCCC;
     }
 
     .buy, .buy:hover{
@@ -34,12 +106,209 @@ $color-light-gray: #8F8F8F;
     }
 
     .descricao-texto-produto{
-        color: $color-texto;
+        width: 440px;
+    height: 66px;
+    left: 841px;
+    top: 515px;
+
+    /* Text X-Small - Desktop */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    letter-spacing: 0.25px;
+
+    /* dark-gray-2 */
+
+    color: #474747;
+
     }
 
-    img.main:hover{
-        transform: scale(2);
+    .posicao-tenis{
+        width: auto;
+        position: absolute;
     }
+
+    .posicao-slider{
+        margin: 0;
+        height: 500px;
+        z-index: 99;
+    }
+
+    .tamanhos{
+        // width: 48px;
+        // height: 48px;
+  
+        // top: 643px;
+        
+
+        // /* white */
+
+        background: #FFFFFF;
+        // /* light-gray-2 */
+
+        border: 1px solid #CCCCCC;
+        border-radius: 4px;
+        // text-align: center;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20%;
+    }
+
+    .tamanhos:hover{
+        background: #C92071;
+        color: #fff;
+    }
+
+    .itens-cores1:hover{
+        background-color: #6FEEFF;
+        border: 2px solid #C92071;
+    }
+
+    .itens-cores2:hover{
+        background-color: #FF6969;
+        border: 2px solid #C92071;
+    }
+
+    .itens-cores3:hover{
+        background-color: #5E5E5E;
+        border: 2px solid #C92071;
+    }
+    .itens-cores4:hover{
+        background-color: #6D70B7;
+        border: 2px solid #C92071;
+    }
+
+    .card-produtos{
+       width: 665px;
+       height: 500px;
+    }
+
+    .card-produtos-inferior{
+        background-color: #E2E3FF;
+    }
+
+    .conteudo-tamanho{
+        width: 22px;
+        height: 24px;
+        left: 854px;
+        top: 655px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        color: #474747;
+    }
+
+    .texto-avaliacao{
+        width: 111px;
+        height: 16px;
+        left: 1020px;
+        top: 390px;
+
+        /* Text X-Small - Desktop */
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        /* or 157% */
+
+        /* light-gray */
+
+        color: #8F8F8F;
+    }
+
+    .titulo-detalhes{
+        width: 68px;
+        height: 22px;
+        left: 841px;
+        top: 611px;
+
+        /* Text X-Small Bold */
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+        /* light-gray */
+
+        color: #8F8F8F;
+    }
+
+    .button-comprar{
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+
+        background: #FFB31F;
+        border-radius: 8px;
+    }
+
+    .nivel-estrelas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 10px;
+        gap: 10px;
+        width: 63px;
+        height: 17px;
+        left: 947px;
+        top: 387px;
+        padding: 5%;
+
+        /* warning */
+
+        background: #F6AA1C;
+        border-radius: 4px;
+        
+        
+    }
+
+    .conteudo-nivel{
+        text-align: center;
+        color:#FFFFFF;
+        font-weight: 900;
+        font-size: 14px;
+        margin-top: -20%;
+    }
+
+    .img-estrela{
+        width: 11.82px;
+        height: 10px;
+        left: 39.18px;
+        top: 7px;
+    }
+
+    .texto-preco{
+        width: 89px;
+        height: 36px;
+        left: 870px;
+        top: 430px;
+
+        /* H3 Title - Desktop Bold */
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 36px;
+        /* identical to box height, or 112% */
+
+        letter-spacing: 1px;
+
+        /* dark-gray-2 */
+
+        color: #474747;
+
+
+    }
+
+    
 }
 
 
