@@ -10,7 +10,7 @@ function updateUser(){
     console.log("usuário atualizado")
 }
 function listUser(){
-    console.log("lista de usuários")
+    return "lista de usuários";
 }
 function deleteUser(){
     console.log("usuário delete")

@@ -6,10 +6,13 @@ const port = "8000";
 const userController = require("./users");
 
 const server = http.createServer((req, res) => {
-    if(){
-        
+    if(req.url == "/users"){
+        res.end(userController.listUser());
+
+    } else{
+        res.end("Hello World");
     }
-    res.end("Hello World")
+  
 })
 
 server.listen(port, host, () => {

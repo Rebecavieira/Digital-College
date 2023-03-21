@@ -42,3 +42,8 @@ git branch -d dev - apaga uma branch
 git pull origin main - puxar da versao principal
 
 
+node js
+
+npm i -g nodemon
+
+
