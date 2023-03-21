@@ -1,6 +1,6 @@
-const produto = require('./produto');
-const categoria = require('./categoria');
-const cliente = require('./cliente');
+const produto = require('./controllers/produto');
+const categoria = require('./controllers/categoria');
+const cliente = require('./controllers/cliente');
 
 // Importando diretamente do NODE
 const http = require("http");
@@ -11,12 +11,18 @@ const ENDERECO = "localhost";
 function recepcao(req, res){
     let resposta = "Página não encontrada";
 
-    if (req.url === "/clientes") {
-        resposta = cliente.buscar();
-    } else if (req.url === '/produtos'){
-        resposta = produto.buscar();
+    switch(req.url){
+        case "/clientes":
+            resposta = cliente.buscar();
+        break;
+        case "/produtos":
+            resposta = produto.buscar();
+        break;
+        case "/categorias":
+            resposta = categoria.buscar();
+        break;
     }
-    
+
     res.end(resposta);
 }
 
