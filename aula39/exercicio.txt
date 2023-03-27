@@ -1,0 +1,206 @@
+- quantos alunos possuem a versao 01 do cartao:
+28518
+SELECT COUNT(*) FROM tb_aluno WHERE cartao_acesso_versao = 1;
+
+- quantos alunos possuem a versao 02 do cartao:
+1672
+SELECT COUNT(*) FROM tb_aluno WHERE cartao_acesso_versao = 2;
+
+- qual o nome e a matricula dos alunos que possuem a versao do cartao maior que 2:
+SELECT nome, matricula FROM tb_aluno WHERE cartao_acesso_versao > 4;
+
++------------------------------------------+-----------+
+| nome                                     | matricula |
++------------------------------------------+-----------+
+| PEDRO RIBEIRO CAVALCANTE FILHO           | 22396781  |
+| JUSCELINO MISSIAS NETO                   | 22396458  |
+| ANTONIO IZAQUE DOS NAVEGANTES LIMA       | 22397710  |
+| ANTONIA MARCIA RODRIGUES BRITO           | 22396797  |
+| PLACIDO DOMINGOS DE OLIVEIRA FILHO       | 22396795  |
+| TALISON ARAUJO DA SILVA                  | 22396794  |
+| MIZAEL COLASSO DA SILVA                  | 22396792  |
+| PAULO SERGIO DE FREITAS                  | 22396791  |
+| ROGERIO DA SILVA NASCIMENTO              | 22396790  |
+| ROMARIO PONTE                            | 22396789  |
+| JOSENI BEZERRA MATOS                     | 22396787  |
+| HALISON DA SILVA ADRIANO                 | 22396786  |
+| MARCELO DA SILVA FEITOZA                 | 22396784  |
+| FRANCISCO GONCALVES DE CASTRO            | 22396783  |
+| MAURO SERGIO MOREIRA DA COSTA            | 22396779  |
+| WESLLEY FERREIRA DE LIMA                 | 22396777  |
+| FRANCISCO AIRTON PEREIRA LIMA            | 22396776  |
+| FRANCISCO HERBET DA SILVA FREIRE         | 22396775  |
+| FELIPE GARCEZ DO AMARAL                  | 22396774  |
+| GLEICIANO FERREIRA LIMA                  | 22396773  |
+| GLACIELDO MARQUES DA COSTA               | 22396772  |
+| FRANCISCO WILLAN DA ROCHA ALVES          | 22396771  |
+| ELIZANGELA LIMA OLIVEIRA SILVA           | 22396768  |
+| FRANCISCO ISMAEL DA SILVA SOUSA          | 22396767  |
+| MATHEUS MARTINS GOMES                    | 22396766  |
+| JOAO RICARDO GONÇALVES DA SILVA          | 22396765  |
+| JOSE ALBERTO DE ALMEIDA JUNIOR           | 22396764  |
+| GABRIELA APARECIDA GOMES DE ALMEIDA      | 22396763  |
+| MARIA IRENILMA NUNES OLIVEIRA            | 22396762  |
+| HIAGO MARTINS                            | 22396760  |
+| JOSE RODRIGUES DOS SANTOS                | 22396758  |
+| MARIA LUCENIR GOMES                      | 22396752  |
+| ANTONIA LUCIA BENTO DA SILVA             | 22396751  |
+| VANESSA DA SILVA                         | 22396750  |
+| ANTONIO JACKSON SILVA FERNANDES          | 22396746  |
+| IVANILDO DE LIMA PEREIRA                 | 22396745  |
+| LUCAS RODRIGUES SAMPAIO                  | 22396743  |
+| EVANDRO BENTO DE ALMEIDA                 | 22396742  |
+| FRANCISCA GENICE DO VALE NETO            | 22396741  |
+| ANDRE ESTEVES LINHARES DE SOUSA          | 22396740  |
+| JUCILEIDE SILVA DE OLIVEIRA              | 22396739  |
+| ELISANETE NASCIMENTO MOREIRA             | 22396738  |
+| GLEICILENE DANTAS FERREIRA               | 22396737  |
+| JACKSON KLEBER ALVES MOURA               | 22396735  |
+| EMERSON PEREIRA PINTO                    | 22396734  |
+| FRANCISCA RAYANE SANTOS VIEIRA           | 22396732  |
+| JOSILANE JERONIMO DA SILVA               | 22396731  |
+| ANTONIA EDLANE PONTES DOS SANTOS         | 22396730  |
+| MARIA NATALIA COSTA SOUSA MACHADO        | 22396729  |
+| HENRIQUE ASSUNCAO GOMES                  | 22396728  |
+| FRANCISCO RODRIGO SOUSA DE PAULO         | 22396727  |
+| KAIO ARAUJO MARTINS                      | 22396726  |
+| ERISNANDO DA SILVA SOUSA                 | 22396725  |
+| DANIEL SOMBRA LUCIANO                    | 22396724  |
+| FELIPE SANTOS SILVA                      | 22396722  |
+| JOSE CARLOS DA SILVA GOMES               | 22396720  |
+| LUCAS SILVA GOMES                        | 22396719  |
+| VALDONE ALMEIDA NUNES                    | 22396718  |
+| EVERSON BEZERRA DE LIMA                  | 22396717  |
+| DANIELY FERREIRA DA SILVA                | 22396716  |
+| THAIS DE SOUSA FERREIRA NUNES            | 22396715  |
+| SYDNEI MARQUES DA SILVA                  | 22396583  |
+| JOSE CLAIRTON DA SILVA AQUINO            | 22396581  |
+| ALLAN MAIK CASTRO SANTOS                 | 22396580  |
+| HUMBERTO WAGNER DA SILVA NASCIMENTO      | 22396578  |
+| THIAGO GABRIEL DA SILVA                  | 22396576  |
+| JOSE RONIELLY FERREIRA LIMA              | 22396575  |
+| SERGIANE SABRINA DE SOUZA SILVA          | 22396573  |
+| ERILENE ALVES BARROS                     | 22396572  |
+| EVARISTO OLIVEIRA DA SILVA               | 22396571  |
+| MARCOS DARIO GOMES DA SILVA              | 22396570  |
+| THYAGO DA SILVA LIMA                     | 22396569  |
+| PAULO NASCIMENTO DA SILVA                | 22396568  |
+| FRANCISCO ERISVANDO DA SILVA             | 22396567  |
+| ROMARIO DE OLIVEIRA SILVA                | 22396565  |
+| FRANCISCA NOEMIA CANDIDO DE SOUSA        | 22396562  |
+| DEUSIMAR DE OLIVEIRA SILVA               | 22396560  |
+| DANILO FIRMINO DOMINGOS                  | 22396559  |
+| MARCELO DA SILVA ANJOS                   | 22396500  |
+| FRANCISCO ROZIVAN FREIRE DA SILVA        | 22396489  |
+| FRANCISCO NETO LOPES RABELO              | 22396486  |
+| ANTONIO ALEXANDRE DA SILVA               | 22396485  |
+| LEANDRO HOLANDA BATISTA DA SILVA         | 22396484  |
+| PEDRO PAULO DA ROCHA FILHO               | 22396480  |
+| NAYANE FERREIRA DE OLIVEIRA              | 22396477  |
+| DENILSON DE BRITO LINHARES               | 22396469  |
+| FRANCISCO ELICIANO OLIVEIRA DA SILVA     | 22396468  |
+| JOSE ALRICELIO DA SILVA                  | 22396465  |
+| MARIA TERESA MATOS DA CRUZ               | 22396417  |
+| FRANCISCO FABIANO PEREIRA DA SILVA       | 22396382  |
+| JAMILE FERREIRA DO VALE                  | 22395755  |
+| FRANCISCO ROMARIO LEITE GUIMARAES        | 22395124  |
+| ANTONIA GEANE SOARES DE FREITAS          | 22395035  |
+| KELVIANE DANTAS DE OLIVEIRA SILVA        | 22394741  |
+| JOICILEIDE LOPES FERNANDES               | 22394738  |
+| MARIA ROZANI MOURAO DE MENESES           | 22394737  |
+| REGINA LUCIA PIRES DE SOUSA              | 22394736  |
+| CASSIA GOMES DE BARROS FELIX             | 22394735  |
+| REGILANE VIEIRA DA SILVA                 | 22394733  |
+| RAVELINE AGOSTINHO DA SILVA              | 22394731  |
+| SONIA LEITE GALVAO                       | 22394730  |
+| JOSE EDMAR FALCAO DE LIMA FILHO          | 22394729  |
+| JESSICA DA SILVA BARROS                  | 22394728  |
+| ANTONIA MAYARA SOARES DE SOUSA           | 22394726  |
+| MARIA VALDIRENE DOS SANTOS OLIVEIRA      | 22394723  |
+| RENATA ESTEVAM DE LIMA BAIA              | 22394722  |
+| MARIA LEIDIANE DE OLIVEIRA FARIAS        | 22394721  |
+| MARIA DANIELE SOUSA SILVA                | 22394717  |
+| MARIA EVANICE SOUSA                      | 22394476  |
+| FRANCISCO CLEMILTON ALVES FILHO          | 22394276  |
+| FRANCISCO OCELIO DA SILVA                | 22393482  |
+| MARIANI SANTOS SOUSA BARROS              | 22392781  |
+| DANIEL SAN SOUZA E SILVA                 | 22391064  |
+| RAIMUNDO NONATO DE SOUSA FILHO           | 22380216  |
+| MARIA MADALENA VIEIRA DE SOUSA           | 22372320  |
+| MARIA GLEICIVANIA DE OLIVEIRA SOUZA      | 22372106  |
+| JOHN CARLOS ARARIPE DOS ANJOS            | 22367940  |
+| FRANCISCO EDINARDO LEONCIO               | 22357396  |
+| JEFERSSON OLIVEIRA DE ALMEIDA            | 22344758  |
+| MARCELA GOMES DA SILVA                   | 22344295  |
+| FELIPE BRUNO DA SILVA MOTA               | 22344162  |
+| FRANCISCA JESSICA DA SILVA               | 22340905  |
+| FRANCISCO GILCLECIO CELESTINO NASCIMENTO | 22335228  |
+| FRANCISCA AUZIRENE DA PENHA              | 22318992  |
+| FRANCISCO CESAR DA SILVA                 | 22310882  |
+| LUCILEIDE QUEIROZ DE ALMEIDA             | 22309157  |
+| FRANCISCO MARCIO BARROS DA SILVA         | 22304323  |
+| ELIZETE GOMES DE ARAUJO                  | 22296768  |
+| MARIA LUCIVANIA MOREIRA                  | 22293484  |
+| JAILSON DOS SANTOS PINTO                 | 22291504  |
+| JOAO CARLOS CONRADO DOS SANTOS           | 22287676  |
+| ANA CLAUDIA MAGALHAES RIBEIRO            | 22285506  |
+| FRANCISCA MARIA FREIRE DOS SANTOS        | 22276679  |
+| NAELIA PEREIRA DE SOUSA                  | 22273833  |
+| CLAUDIA GESSICA DA SILVA LIMA            | 22266043  |
+| ANTONIA LILIANE DE LIMA                  | 22263453  |
+| REGIANE MOURA DA SILVA                   | 22256937  |
+| GLEICIVANE LOPES DE LIMA                 | 22253645  |
+| RILTON LIMA MENDES                       | 22243620  |
+|  LUIZ ADRIANO MENDES REBOUCAS            | 00301742  |
+| REGIANE CARVALHO NOGUEIRA                | 22213201  |
+| FRANCISCO DIEGO FERREIRA DE HOLANDA      | 22187546  |
+| OSAISA MARIA DE FREITAS                  | 22183396  |
+| ANTONIO MACIEL GOMES LAMEU               | 22178990  |
+| FRANCISCO EDINARDO FARIAS NUNES          | 22141667  |
+| DALGISNALIA ALMEIDA DE ARAUJO            | 22140909  |
+| ALDEANES FREITAS DA SILVA                | 22137277  |
+| JOSE BATISTA DA COSTA FILHO              | 22134530  |
+| VAUIRES MENESES SALDANHA                 | 22123640  |
+| JOCILENE DA SILVA COSTA                  | 22106769  |
+| MARIA MADALENA PAULO DE MENEZES          | 22074660  |
+| JOSE IVAN DA SILVA                       | 22064620  |
+| ALBETISA CAVALCANTE DOS SANTOS           | 22056568  |
+| BENEDITO GALVAO PEREIRA                  | 22053516  |
+| MARIA MARLETE DE SOUZA SILVA             | 22048318  |
+| ANGELA MARIA FERREIRA DA SILVA           | 22045173  |
+| LUCELIA QUEIROZ DE ALMEIDA               | 22035653  |
+| GERMANA ARAUJO DE FREITAS                | 16000086  |
++------------------------------------------+-----------+
+158 rows in set (0.014 sec)
+
+- a quantidade de todos os alunos que começam com Francisco no nome;
+
+SELECT COUNT(nome)  AS  TotalNameFrancisco  FROM  tb_aluno  WHERE  nome LIKE  'FRANCISCO%';
+| TotalNameFrancisco |
++--------------------+
+|               2471 |
++--------------------+
+1 row in set (0.007 sec)
+
+SELECT COUNT(*) FROM  tb_aluno  WHERE  nome LIKE  'FRANCISCO%';  
++----------+
+| COUNT(*) |
++----------+
+|     2471 |
++----------+
+1 row in set (0.007 sec)
+
+- a quantiade de todos os alunos que possuem o nome MARIA no nome;
+SELECT COUNT(id) FROM  tb_aluno  WHERE  nome =  'MARIA';   
+
+SELECT COUNT(*) FROM  tb_aluno  WHERE  nome LIKE  '%MARIA';
++----------+
+| COUNT(*) |
++----------+
+|        2 |
++----------+
+1 row in set (0.010 sec)
+
+- quantos alunos foram alterados entre 2021 e 2022
+
+- quais os nome, matricula e data dos alunos alterados em janeiro de 2022;
