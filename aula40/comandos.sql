@@ -59,3 +59,31 @@ FROM
 ON
     tb_aluno.escola_id = tb_escola.id
 LIMIT 10;
+
+-------------------------
+
+SELECT 
+    tb_aluno.id, tb_aluno.nome, tb_escola.nome
+FROM 
+    tb_aluno INNER JOIN tb_escola
+ON 
+    tb_aluno.escola_id = tb_escola.id
+LIMIT 5;
+
+SELECT DISTINCT
+    tb_aluno.id, tb_aluno.nome, tb_escola.nome
+FROM 
+    tb_aluno INNER JOIN tb_escola
+ON 
+    tb_aluno.escola_id = tb_escola.id 
+LIMIT 5;
+
+--------------------------------------- essa forma deu certo
+
+SELECT DISTINCT
+    tb_aluno.id, tb_aluno.nome, tb_escola.nome
+FROM 
+    tb_aluno INNER JOIN tb_escola
+ON 
+    tb_aluno.escola_id = tb_escola.id 
+GROUP BY tb_escola.id;
