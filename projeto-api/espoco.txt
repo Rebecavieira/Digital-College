@@ -1,0 +1,70 @@
+tb_banner {
+    id:
+}
+
+tb_colecoes_destaque {
+    id:
+}
+
+tb_produtos {
+    id:
+    gênero:
+}
+
+----------------
+tb_marca{
+    id:
+}
+
+tb_categoria{
+    id:
+    titulo:
+    descricao:
+}
+
+----------------
+terceira página
+
+coisas em relação a tabela de tb_produtos
+
+-----------------
+
+Sprint 2
+
+tela de carrinho
+
+tb_carrinho{
+    id:
+    id_produto:
+}
+
+tb_cupom{
+    id:
+}
+
+tela de finalizar compra
+
+tb_pedido{
+    
+}
+
+tb_cliente{
+
+}
+
+tb_tipos_pagamento{
+
+}
+
+------------------
+sprint 3
+
+tb_usuario{
+    id:
+    nome:
+    email:
+    senha:
+}
+
+
+
