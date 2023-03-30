@@ -63,7 +63,7 @@ tb_usuario{
     id:
     nome:
     email:
-    senha:
+    senha:  
 }
 
 
