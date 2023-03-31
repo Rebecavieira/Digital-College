@@ -6,10 +6,10 @@ CREATE TABLE tb_category (
     updated_at DATETIME NULL
 );
 
-ALTER TABLE tb_category MODIFY COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+ALTER TABLE tb_category
+MODIFY COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 
-INSERT INTO tb_category (nome) VALUES ("Camisetas");
+INSERT INTO tb_category (nome) 
+VALUES ("Camisetas");
 
-SELECT * FROM tb_category;
-
-ALTER TABLE tb_category ALTER COLUMN created_at GETDATE();  
+SELECT * FROM tb_category; 

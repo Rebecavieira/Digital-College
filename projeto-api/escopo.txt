@@ -1,70 +1,43 @@
 tb_banner {
-    id:
+    id
 }
 
 tb_colecoes_destaque {
-    id:
+    id
 }
 
-tb_produtos {
-    id:
-    gênero:
+tb_produto {
+    id
 }
 
-----------------
-tb_marca{
-    id:
+tb_marca {
+    id
 }
 
-tb_categoria{
-    id:
-    titulo:
-    descricao:
+tb_categoria {
+    id
 }
 
-----------------
-terceira página
-
-coisas em relação a tabela de tb_produtos
-
------------------
-
-Sprint 2
-
-tela de carrinho
-
-tb_carrinho{
-    id:
-    id_produto:
+tb_carrinho {
+    id
 }
 
-tb_cupom{
-    id:
+tb_cupom {
+    id
 }
 
-tela de finalizar compra
-
-tb_pedido{
-    
+tb_pedido {
+    id
 }
 
-tb_cliente{
-
+tb_cliente {
+    id
 }
 
-tb_tipos_pagamento{
-
+tb_tipos_pagamento {
+    id
 }
 
-------------------
-sprint 3
-
-tb_usuario{
-    id:
-    nome:
-    email:
-    senha:  
+tb_usuario {
+    id
 }
-
-
-
