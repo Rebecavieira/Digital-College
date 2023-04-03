@@ -28,12 +28,37 @@ app.post('/banners', async (req, res) => {
     res.send(corpo);
 });
 
-app.put('/banners/:id', async (req, res) => {
-    res.send('ok');
+app.patch('/banners/:id', async (req, res) => {
+    let dados = req.body;
+
+    let jaExiste = await database.execute(`
+        SELECT * FROM tb_banner WHERE id='${req.params.id}'
+    `);
+
+    //testando se realmente se existe algum banner com aquele id
+    if (undefined === jaExiste[0]) {
+        res.sendStatus(404);
+        return;
+    }
+
+    await database.execute(`
+        UPDATE tb_banner SET
+            titulo='${req.body.titulo || jaExiste[0].titulo}',
+            descricao='${req.body.descricao || jaExiste[0].descricao}',
+            imagem='${req.body.imagem || jaExiste[0].imagem}'
+        WHERE id='${req.params.id}'
+    `);
+
+    dados.id = req.params.id;
+
+    res.send(dados);
 });
 
+
 app.delete('/banners/:id', async (req, res) => {
-    res.send('ok');
+    await database.execute(`DELETE FROM tb_banner WHERE id='${req.params.id}'`)
+
+    res.sendStatus(204);
 });
 
 
