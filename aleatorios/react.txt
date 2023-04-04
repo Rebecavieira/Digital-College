@@ -29,3 +29,6 @@ por exemplo: input. <input/>
 
 
 npm i react-router-dom -  instala o react router dom
+
+
+npm install cors
