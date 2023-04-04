@@ -1,3 +1,12 @@
+function remover(id) {
+    fetch('http://localhost:8000/banners/' +id, {
+        method: "DELETE"
+    });
+
+    alert('Banner excluído');
+    location.href="banners.html";
+}
+ 
 fetch('http://localhost:8000/banners')
     .then(res => res.json())
     .then(dados => {
@@ -10,7 +19,7 @@ fetch('http://localhost:8000/banners')
                     <td><img width="100px" src="${cada.imagem}"></td>
                     <td>
                         <button>Editar</button>
-                        <button>Excluir</button>
+                        <button onclick="remover('${cada.id}')">Excluir</button>
                     </td>                    
                 </tr>
             `;
