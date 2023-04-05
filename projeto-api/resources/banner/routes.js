@@ -4,7 +4,29 @@
 const app = require('express').Router();
 const database = require('../../connection/database');
 
+const pessoasAutorizadas = [
+    {
+        nome:'Sara',
+        token: '4246'
+    },
+    {
+        nome: 'Marilia',
+        token: '4727'
+    }
+];
+
 app.get('/banners', async (req, res) => {
+    // filtrar apenas as pessoas que possuem aquele token
+    let verificadas = pessoasAutorizadas.filter(
+        cada => cada.token === req.headers.token
+    );
+
+    // se não existir ninguem com aquele token, então é "acesso não autorizado"
+    if (verificadas.length === 0){
+        res.sendStatus(401);
+        return;
+    }
+
     let dados = await database.execute(`SELECT * FROM tb_banner`);
 
     res.send(dados);
