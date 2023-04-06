@@ -37,4 +37,3 @@ app.get("/users/auth", async (req, res) => {
     res.send(JSON.stringify({"token": users[0].token}));
 });
 
-module.exports = app;
