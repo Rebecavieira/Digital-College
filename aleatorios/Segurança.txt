@@ -1,0 +1,36 @@
+Segurança
+
+- Disponibilidade
+
+- Integridade
+
+- Confidencialidade
+
+- Autenticidade
+
+- Não repudio
+
+npm install swagger-ui-express swagger-autogen
+
+no arquivo server.js:
+const swagger = require("swagger-ui-express");
+const docs = require('./docs.json')
+
+// criando rota da documentação
+app.use('/documentacao', swagger.serve, swagger.setup(docs));
+
+// cria um arquivo chamado "docs.json"
+
+// cria um arquivo gerar-docs.json e colocar o código dentro do arquivo:
+
+const autogen = require('swagger-autogen');
+
+const arquivoSaida = './docs.json';
+const endpoints = ['./server.js'];
+
+autogen(arquivoSaida, endpoints);
+
+//para executar no servidor
+// node gerar-docs.js 
+
+http://localhost:8000/documentacao
