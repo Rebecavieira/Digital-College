@@ -36,15 +36,17 @@ app.get("/users/auth", async (req, res) => {
 
     // se não for encontrado ninguém com o email, então o usuário não existe
     if (!users[0]){
-        res.sendStatus(400); // bad request
+        res.status(400).send({erro: 'Email inválido'});
         return;
     }
 
-    if(users.length === 0){
-        res.send(JSON.stringify({"message": "Este usuário não existe"}))
-        return;
+    let senhaVerificada = await argon2.verify(users[0].senha, req.headers.senha);
+
+    if (false === senhaVerificada){
+        res.status(400).send({erro: 'Senha Incorreta'});
     }
-    res.send(JSON.stringify({"token": users[0].token}));
+
+    res.send(users[0]);
 });
 
 module.exports = app; 
