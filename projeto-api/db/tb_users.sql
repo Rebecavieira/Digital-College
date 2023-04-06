@@ -5,4 +5,6 @@ CREATE TABLE tb_users (
     token VARCHAR (50) NULL
 );
 
-ALTER TABLE tb_users ADD COLUMN email VARCHAR(100);
+ALTER TABLE tb_users ADD COLUMN email VARCHAR(100); 
+
+ALTER TABLE tb_users MODIFY COLUMN senha VARCHAR(255);
