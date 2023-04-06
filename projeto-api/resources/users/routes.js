@@ -25,4 +25,16 @@ app.post("/users", async (req, res) => {
     res.send(dados);
 });
 
+app.get("/users/auth", async (req, res) => {
+    let users = await database.execute(`
+        SELECT * FROM tb_users WHERE email = '${req.headers.email}' AND senha = '${req.headers.senha}';
+    `);
+
+    if(users.length === 0){
+        res.send(JSON.stringify({"message": "Este usuário não existe"}))
+        return;
+    }
+    res.send(JSON.stringify({"token": users[0].token}));
+});
+
 module.exports = app;
