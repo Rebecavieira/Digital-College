@@ -1,0 +1,39 @@
+testes automatizados
+
+npm init e vai clicando enter para gerar o arquivo package.json
+
+vai no google e digita cypress
+pega o comando npm install cypress --save-dev no site oficial
+
+digita o comando npm install cypress --save-dev no terminal e executa
+
+digita o comando ./node_modules/.bin/cypress open
+
+vai abrir uma tela do cypress
+clica no E2E 
+
+continue 
+continue
+
+escolhe o chrome
+
+clica em create new spec
+clica em create spec
+clica em okay run the spec
+
+ao digitar os seguintes códigos:
+
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('https://google.com')
+    cy.get(".gLFyf").type("digital college")
+  })
+})
+
+vai testar o campo de input do google
+.gLFyf faz referencia a classe do input
+
+npx cypress open
+
+
+Testes automatizados ponta a ponta com cypress
