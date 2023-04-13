@@ -1,20 +1,13 @@
 const db = require("../../connection/database");
 const table = "tb_category"; 
- 
+
 async function listAll(){
     let lista = await db.execute(`
         SELECT * FROM ${table} WHERE status = 0 OR status = 1;
     `);
     return JSON.stringify(lista);
 }
-
-async function listAllAdmin(){
-    let lista = await db.execute(`
-        SELECT * FROM ${table};
-    `);
-    return JSON.stringify(lista);
-}
-
+ 
 async function listOne(id){
     let lista = await db.execute(`
         SELECT * FROM ${table} WHERE ${id};
@@ -64,10 +57,9 @@ async function destroy(id){
 
 module.exports ={
     listAll,
-    listAllAdmin,
     listOne,
     create,
-    disable,
     edit,
+    disable,
     destroy
 }

@@ -1,0 +1,14 @@
+testes automatizados - unitários
+
+ferramentas para teste frontend e ponta a ponta: cypress
+
+ferramenta para teste unitário backend: jest
+
+
+cria arquivo package.json e coloca uma {}
+instala npm install jest --save
+
+arquivo de teste nomedoarquivo.test.js
+
+´para verificar o resultado do teste
+node __tests__/tabuada.test.js

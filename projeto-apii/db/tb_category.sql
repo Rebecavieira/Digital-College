@@ -12,4 +12,4 @@ MODIFY COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 INSERT INTO tb_category (nome) 
 VALUES ("Camisetas");
 
-SELECT * FROM tb_category;
+SELECT * FROM tb_category; 

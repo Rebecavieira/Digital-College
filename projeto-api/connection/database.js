@@ -1,14 +1,27 @@
+const iconv = require('../node_modules/mysql2/node_modules/iconv-lite/lib');
+iconv.encodingExists('foo');
+
 const mysql2 = require('mysql2/promise');
 
-async function execute(sql) {
-    let conexao = await mysql2.createConnection({
-        user: 'root',
-        password: '1234',
-        database: 'db_digital_store',
-        host: 'localhost',
-        port: '3000' // essa porta é a porta do mariadb
-    });
+const DATABASE = 'db_digital_store';
 
+async function abrirConexao(db){
+    try{
+        let conexao = await mysql2.createConnection({
+            user: 'root',
+            password: '1234',
+            database: db,
+            host: 'localhost', 
+            port: 3000      
+        });
+
+    return conexao;
+    } catch (algumErro) {
+        return "error";
+    }
+}
+async function execute(sql) {
+    let conexao = await abrirConexao(DATABASE);
     //executa lá no mysql
     let [rows] = await conexao.execute(sql);
 
@@ -16,5 +29,7 @@ async function execute(sql) {
 }
 
 module.exports = {
-    execute
+    execute,
+    abrirConexao
 };
+
